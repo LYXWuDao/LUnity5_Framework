@@ -1,6 +1,4 @@
 ﻿using LUnity.Game.Util;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameTest : MonoBehaviour
@@ -10,8 +8,10 @@ public class GameTest : MonoBehaviour
     void Start()
     {
 
-        SLUnityLog.Log("this is log");
+        SLUnityLog.ListenerLogStack();
 
+        for (int i = 0, len = 10; i < len; i++)
+            SLUnityLog.Log("this is log");
     }
 
     // Update is called once per frame

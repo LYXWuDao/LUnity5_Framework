@@ -156,6 +156,17 @@ namespace LUnity.Game.Util
             }
         }
 
+        /// <summary>
+        /// 游戏 配置文件路径
+        /// </summary>
+        public static string GameConfigPath
+        {
+            get
+            {
+                return GameResourcePath + "/config";
+            }
+        }
+        
     }
 
 }
